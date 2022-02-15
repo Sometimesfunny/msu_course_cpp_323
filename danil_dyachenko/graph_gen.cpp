@@ -98,7 +98,7 @@ class Graph {
     return edge_color;
   }
 
-  Edge& add_edge(const VertexId& from_vertex_id, const VertexId& to_vertex_id) {
+  const Edge& add_edge(const VertexId& from_vertex_id, const VertexId& to_vertex_id) {
     assert(from_vertex_id < current_vertex_id);
     assert(from_vertex_id >= 0);
     assert(to_vertex_id < current_vertex_id);
